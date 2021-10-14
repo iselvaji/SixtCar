@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SixtCar</string>
+    <string name="loading">Loading..</string>
+    <string name="proceed">Proceed</string>
+    <string name="close">Close</string>
+    <string name="proceed_msg">We will proceed with selected car..</string>
+
+    <string name="error_loading_data">Unable to load the car details. Please try later.</string>
+    <string name="error_empty_data">Car information is not available to display. Please try later.</string>
+    <string name="error_network">Network is not available. Please check the connectivity.</string>
+
+</resources>

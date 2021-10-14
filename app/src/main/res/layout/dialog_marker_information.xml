@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clVehicleInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgVehicle"
+            android:layout_width="@dimen/dim_90"
+            android:layout_height="@dimen/dim_72"
+            android:gravity="center"
+            android:layout_margin="@dimen/dim_10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/ic_car"
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVehicleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:layout_marginTop="@dimen/dim_16"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="@dimen/text_8"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="BMW" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="@dimen/text_6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVehicleName"
+            tools:text="BMW" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="@dimen/text_6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMake"
+            tools:text="Mini" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLicense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_16"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGroup"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dim_1"
+        android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clVehicleInfo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dim_20"
+        android:paddingEnd="@dimen/dim_20"
+        android:text="@string/proceed"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dim_20"
+        android:paddingEnd="@dimen/dim_20"
+        android:text="@string/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dim_1"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnProceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnProceed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

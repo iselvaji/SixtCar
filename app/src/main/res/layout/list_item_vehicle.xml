@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dim_8"
+    app:cardElevation="@dimen/dim_8"
+    android:layout_margin="@dimen/dim_5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageVehicle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/ic_car"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageVehicle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/text_18"
+            android:fontFamily="sans-serif"
+            android:layout_margin="10dp"
+            android:text=""
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvModelName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:textSize="@dimen/text_16"
+            android:fontFamily="sans-serif"
+            android:text=""
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvModelName"
+            android:textSize="@dimen/text_16"
+            android:fontFamily="sans-serif"
+            android:text=""
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLicens"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvMake"
+            android:textSize="@dimen/text_16"
+            android:fontFamily="sans-serif"
+            android:text=""
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
