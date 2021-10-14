@@ -1,14 +1,21 @@
 # SixtCar
 Sixt Car - app to display car details in list view and map view.
 
-Design :
+**Design :**
 
 Pattern Used - MVVM pattern with Android Viewmodel and Livedata.
+
 Network - Retrofit2 with Okhttp
+
 Data - Json
+
 Logging - Timber framework
+
 Image loading - Glide
+
 Other - Firebase
+
+**UI design** 
 
 Car details in list view:
 
